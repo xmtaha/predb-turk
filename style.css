@@ -324,6 +324,15 @@ button:hover {
     max-height: 75vh;
     border: 1px solid #ddd;
     display: none;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.nfo-modal-content img.zoomed {
+    max-width: none;
+    max-height: none;
+    cursor: zoom-out;
+    transform: scale(2.0);
 }
 
 .nfo-loading {

@@ -289,12 +289,18 @@ function openNfoModal(imageUrl, releaseName) {
     modalImg.style.display = 'none';
     modalLoading.style.display = 'block';
     modalError.style.display = 'none';
+    modalImg.classList.remove('zoomed');
     
     const img = new Image();
     img.onload = function() {
         modalImg.src = imageUrl;
         modalImg.style.display = 'block';
         modalLoading.style.display = 'none';
+        
+        modalImg.onclick = function(e) {
+            e.stopPropagation();
+            this.classList.toggle('zoomed');
+        };
     };
     img.onerror = function() {
         modalLoading.style.display = 'none';
