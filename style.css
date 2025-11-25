@@ -310,6 +310,7 @@ button:hover {
     padding: 20px;
     border-radius: 5px;
     position: relative;
+    overflow: auto;
 }
 
 .nfo-modal-content h3 {
@@ -320,19 +321,23 @@ button:hover {
 }
 
 .nfo-modal-content img {
+    width: auto;
+    height: auto;
     max-width: 100%;
     max-height: 75vh;
     border: 1px solid #ddd;
     display: none;
     cursor: zoom-in;
     transition: transform 0.3s ease;
+    transform-origin: top center;
 }
 
 .nfo-modal-content img.zoomed {
     max-width: none;
     max-height: none;
+    width: 200%;
     cursor: zoom-out;
-    transform: scale(2.0);
+    transform: scale(1);
 }
 
 .nfo-loading {
