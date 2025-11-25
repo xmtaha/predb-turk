@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreDB Türk - BLURAY Releases</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <img src="predb_turk_logo.png" alt="PreDB Türk Logo" class="logo" />
+                <div class="header-buttons">
+                    <a href="index.html" class="header-btn">Ana Sayfa</a>
+                    <a href="nasil-kullanilir.html" class="header-btn">Nasıl Kullanılır</a>
+                    <a href="hakkinda.html" class="header-btn">Hakkında</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="https://github.com/xmtaha" target="_blank" class="author-link">xmtaha</a> tarafından sevgi ile kodlandı
+            </div>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Release ara..." />
+                <button id="searchBtn">Ara</button>
+                <button id="clearBtn">Temizle</button>
+            </div>
+
+            <div class="timer-box">
+                <span id="timerText">Güncelleme: <strong id="countdown">60</strong>sn</span>
+                <button id="refreshBtn">Yenile</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stats-title">BLURAY Son Çıkanlar</div>
+            <div class="stat-item">
+                <span class="stat-label">Toplam:</span>
+                <span id="totalCount" class="stat-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Son Güncelleme:</span>
+                <span id="lastUpdate" class="stat-value">-</span>
+            </div>
+        </div>
+
+        <div id="loading" class="loading">Yükleniyor...</div>
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="releaseList" class="release-list"></div>
+
+        <footer>
+            <p>PreDB API | Dakikada bir otomatik güncellenir</p>
+            <p class="footer-author"><a href="https://github.com/xmtaha" target="_blank" class="author-link">xmtaha</a> tarafından sevgi ile kodlandı</p>
+            <button id="clearLogsBtn" class="clear-logs-btn">Logları Temizle</button>
+        </footer>
+    </div>
+
+    <!-- NFO Modal -->
+    <div id="nfoModal" class="nfo-modal" onclick="closeNfoModal()">
+        <span class="nfo-close">&times;</span>
+        <div class="nfo-modal-content" onclick="event.stopPropagation()">
+            <h3 id="nfoModalTitle"></h3>
+            <div id="nfoModalLoading" class="nfo-loading">NFO Yükleniyor...</div>
+            <div id="nfoModalError" class="nfo-error">NFO mevcut değil</div>
+            <img id="nfoModalImage" src="" alt="NFO" />
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

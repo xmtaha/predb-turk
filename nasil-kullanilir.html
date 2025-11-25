@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasıl Kullanılır - PreDB Türk</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <img src="predb_turk_logo.png" alt="PreDB Türk Logo" class="logo" />
+                <div class="header-buttons">
+                    <a href="index.html" class="header-btn">Ana Sayfa</a>
+                    <a href="nasil-kullanilir.html" class="header-btn">Nasıl Kullanılır</a>
+                    <a href="hakkinda.html" class="header-btn">Hakkında</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="https://github.com/xmtaha" target="_blank" class="author-link">xmtaha</a> tarafından sevgi ile kodlandı
+            </div>
+        </header>
+
+        <div class="about-content">
+            <h1>Nasıl Kullanılır?</h1>
+            
+            <section class="about-section">
+                <h2> Hızlı Başlangıç</h2>
+                <p>
+                    PreDB Türk, BLURAY release'lerini takip etmek için tasarlanmış çok basit bir arayüze sahiptir. 
+                    Bu rehber size tüm özellikleri adım adım anlatacak.
+                </p>
+            </section>
+
+            <section class="about-section">
+                <h2> Ana Sayfa Özellikleri</h2>
+                
+                <div class="tutorial-step">
+                    <h3> Otomatik Yükleme</h3>
+                    <p>
+                        Siteye girdiğiniz anda otomatik olarak <strong>son 50 BLURAY release</strong> yüklenir. 
+                        Herhangi bir butona basmanıza gerek yok!
+                    </p>
+                    <div class="tip-box">
+                        <strong> İpucu:</strong> İlk yüklemede birkaç saniye bekleyin, veriler PreDB API'den çekiliyor.
+                    </div>
+                </div>
+
+                <div class="tutorial-step">
+                    <h3> Release Kartları</h3>
+                    <p>Her release kartında şu bilgiler bulunur:</p>
+                    <ul>
+                        <li><strong>Release Adı:</strong> Filmin veya dizinin tam release adı</li>
+                        <li><strong>Kategori:</strong> Sağ üstte kırmızı etiket (BLURAY)</li>
+                        <li><strong>Tarih:</strong> Release'in çıkış tarihi ve saati</li>
+                        <li><strong>Grup:</strong> Release'i yapan Scene grubu</li>
+                        <li><strong>Durum:</strong> OK (normal) veya NUKED (iptal edilmiş)</li>
+                        <li><strong>NFO Göster Butonu:</strong> Detaylı bilgi için</li>
+                    </ul>
+                </div>
+
+                <div class="tutorial-step">
+                    <h3> Otomatik Güncelleme</h3>
+                    <p>
+                        Sayfa <strong>60 saniyede bir otomatik</strong> olarak yenilenir ve yeni release'leri gösterir. 
+                        Geri sayım sayacı kontrols bölümünde görünür.
+                    </p>
+                    <div class="info-box">
+                        <strong> Bilgi:</strong> "Güncelleme: 60sn" yazısı size ne kadar süre kaldığını gösterir. 
+                        0'a düştüğünde sayfa otomatik yenilenir.
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2> Arama Nasıl Yapılır?</h2>
+                
+                <div class="tutorial-step">
+                    <h3>Adım 1: Arama Kutusunu Kullanın</h3>
+                    <p>
+                        Sayfanın üst kısmında "Release ara..." yazan arama kutusu bulunur. 
+                        Buraya aramak istediğiniz filmin veya dizinin adını yazın.
+                    </p>
+                    <div class="example-box">
+                        <strong> Örnek Aramalar:</strong>
+                        <ul>
+                            <li>Alien (tüm Alien release'leri)</li>
+                            <li>Toy.Soldiers (tam isim)</li>
+                            <li>2025 (2025 yılındaki release'ler)</li>
+                            <li>COMPLETE (complete tag'i olanlar)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tutorial-step">
+                    <h3>Adım 2: Ara Butonuna Tıklayın</h3>
+                    <p>
+                        Yazdıktan sonra <strong>"Ara"</strong> butonuna tıklayın veya klavyede <strong>Enter</strong> tuşuna basın. 
+                        Site PreDB API'sine sorgu gönderecek ve sonuçları getirecektir.
+                    </p>
+                    <div class="warning-box">
+                        <strong> Önemli:</strong> Arama yaparken API'ye gerçek zamanlı istek atılır. 
+                        Bu yüzden birkaç saniye beklemeniz gerekebilir.
+                    </div>
+                </div>
+
+                <div class="tutorial-step">
+                    <h3>Adım 3: Aramayı Temizleme</h3>
+                    <p>
+                        Arama sonuçlarını temizleyip ana listeye dönmek için <strong>"Temizle"</strong> butonuna tıklayın. 
+                        Bu, sayfayı yenilemeden son 50 release'i tekrar gösterir.
+                    </p>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2> NFO Görüntüleme</h2>
+                
+                <div class="tutorial-step">
+                    <h3>NFO Nedir?</h3>
+                    <p>
+                        NFO dosyası, release hakkında detaylı bilgi içeren bir dokümandır. 
+                        İçinde şu bilgiler bulunur:
+                    </p>
+                    <ul>
+                        <li>Film/dizi çözünürlüğü (1080p, 2160p vs.)</li>
+                        <li>Ses formatı ve dil bilgileri</li>
+                        <li>Altyazı seçenekleri</li>
+                        <li>Kaynak bilgisi (Bluray Region, source)</li>
+                        <li>IMDB linki ve puan</li>
+                        <li>Dosya boyutu ve içeriği</li>
+                    </ul>
+                </div>
+
+                <div class="tutorial-step">
+                    <h3>NFO Nasıl Görüntülenir?</h3>
+                    <p>
+                        Her release kartının altında <strong>"NFO Göster"</strong> butonu vardır. 
+                        Bu butona tıkladığınızda:
+                    </p>
+                    <ol>
+                        <li>Ekranda bir popup penceresi açılır</li>
+                        <li>"NFO Yükleniyor..." mesajı görünür</li>
+                        <li>NFO varsa görüntülenir, yoksa "NFO mevcut değil" uyarısı gelir</li>
+                        <li>Popup'ı kapatmak için X butonuna veya dışarı tıklayın</li>
+                    </ol>
+                    <div class="tip-box">
+                        <strong> İpucu:</strong> NFO'yu büyütmek için popup içine tıklamadan önce tarayıcınızın zoom özelliğini kullanabilirsiniz.
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2> Kontrol Butonları</h2>
+                
+                <div class="tutorial-step">
+                    <h3> Yenile Butonu</h3>
+                    <p>
+                        Manuel olarak sayfayı güncellemek için kullanılır. 
+                        60 saniye beklemeden yeni release'leri kontrol etmek istiyorsanız bu butona tıklayın.
+                    </p>
+                </div>
+
+                <div class="tutorial-step">
+                    <h3> Logları Temizle</h3>
+                    <p>
+                        Sayfa alt kısmında bulunan bu buton, tarayıcınızın LocalStorage'ında 
+                        biriken log kayıtlarını temizler. Eğer sayfa yavaşladıysa veya 
+                        depolama alanı doluysa kullanabilirsiniz.
+                    </p>
+                    <div class="info-box">
+                        <strong> Bilgi:</strong> Loglar sadece sizin tarayıcınızda tutulur, 
+                        hiçbir yere gönderilmez. Sayfayı yenilemek logları silmez.
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2> İstatistikler</h2>
+                <p>
+                    Sayfanın üst kısmında iki önemli istatistik gösterilir:
+                </p>
+                <ul>
+                    <li><strong>Toplam:</strong> Şu anda gösterilen release sayısı (maksimum 50)</li>
+                    <li><strong>Son Güncelleme:</strong> Verilerin en son ne zaman çekildiği (tarih ve saat)</li>
+                </ul>
+            </section>
+
+            <section class="about-section">
+                <h2> Mobil Kullanım</h2>
+                <p>
+                    PreDB Türk tamamen responsive tasarıma sahiptir. Mobil cihazlarda:
+                </p>
+                <ul>
+                    <li>Tüm butonlar dokunmaya uygun büyüklüktedir</li>
+                    <li>Release kartları tek sütun halinde sıralanır</li>
+                    <li>NFO popup'ları ekran boyutuna göre ayarlanır</li>
+                    <li>Arama ve kontroller alt alta dizilir</li>
+                </ul>
+                <div class="tip-box">
+                    <strong> İpucu:</strong> Mobilde NFO görüntülerken parmağınızla zoom yapabilirsiniz.
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2> Gizlilik ve Güvenlik</h2>
+                <p>
+                    PreDB Türk hiçbir kişisel veri toplamaz veya saklamaz:
+                </p>
+                <ul>
+                    <li>Çerezler kullanılmaz</li>
+                    <li>Analitik araçlar yoktur</li>
+                    <li>Sadece LocalStorage ile sayfa verileri önbelleklenir</li>
+                    <li>Tüm veriler PreDB.net'in halka açık API'sinden gelir</li>
+                    <li>HTTPS üzerinden güvenli bağlantı yapılır</li>
+                </ul>
+            </section>
+
+            <section class="about-section">
+                <h2> Sık Sorulan Sorular</h2>
+                
+                <div class="faq-item">
+                    <h4>S: Neden bazı release'lerde NFO yok?</h4>
+                    <p>
+                        C: Tüm release'lerin NFO'su PreDB'ye yüklenmemiş olabilir. 
+                        Bu, release grubunun veya PreDB'nin kararına bağlıdır.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>S: NUKED ne demek?</h4>
+                    <p>
+                        C: NUKED, release'in Scene kurallarına uygun olmadığı için iptal edildiği anlamına gelir. 
+                        Genellikle teknik sorunlar, yanlış etiketleme veya dupe (tekrar) nedeniyle olur.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>S: Sayfa neden bazen yavaş yükleniyor?</h4>
+                    <p>
+                        C: PreDB API'sine bağlantı hızınıza ve API'nin yoğunluğuna bağlıdır. 
+                        Logları temizlemek de yardımcı olabilir.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>S: Arama sonuçları neden sınırlı?</h4>
+                    <p>
+                        C: API maksimum 50 sonuç döndürür. Daha spesifik aramalar yaparak 
+                        istediğiniz sonuçları bulabilirsiniz.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>S: Verileri indirebilir miyim?</h4>
+                    <p>
+                        C: Şu anda indirme özelliği yok, ancak tarayıcınızın 
+                        LocalStorage'ında veriler önbelleklenir.
+                    </p>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2> Pro İpuçları</h2>
+                <ul>
+                    <li>Belirli bir grubu aramak için grup adını arama kutusuna yazın (örn: SPARKS)</li>
+                    <li>Yıl bazlı arama için direkt yılı yazın (örn: 2025)</li>
+                    <li>COMPLETE, REMASTERED, UHD gibi tag'leri arayabilirsiniz</li>
+                    <li>Sayfayı arka planda açık bırakırsanız otomatik güncellenir</li>
+                    <li>Tarayıcınızın yer imi özelliğini kullanarak hızlı erişim sağlayın</li>
+                </ul>
+            </section>
+
+            <div class="back-button-container">
+                <a href="index.html" class="back-button">Ana Sayfaya Dön</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>PreDB API | Dakikada bir otomatik güncellenir</p>
+            <p class="footer-author"><a href="https://github.com/xmtaha" target="_blank" class="author-link">xmtaha</a> tarafından sevgi ile kodlandı</p>
+        </footer>
+    </div>
+</body>
+</html>
